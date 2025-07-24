@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoria 2025 - SEDUC-SP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0066cc 0%, #00aaff 100%);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="gradient-bg text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://i.ibb.co/9m53T9V3/LOGO-DE.png" alt="Logo SEDUC" class="h-12">
+                <span class="text-xl font-bold">Projeto Professor Tutor Anos Finais</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#sobre" class="hover:text-yellow-300 transition">Sobre</a>
+                <a href="#objetivos" class="hover:text-yellow-300 transition">Objetivos</a>
+                <a href="#metodologia" class="hover:text-yellow-300 transition">Metodologia</a>
+                <a href="#escolas" class="hover:text-yellow-300 transition">Escolas</a>
+                           </nav>
+            <button class="md:hidden text-2xl" id="menuBtn">☰</button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-blue-900 w-full py-2" id="mobileMenu">
+            <div class="container mx-auto px-4 flex flex-col space-y-3">
+                <a href="#sobre" class="hover:text-yellow-300 transition">Sobre</a>
+                <a href="#objetivos" class="hover:text-yellow-300 transition">Objetivos</a>
+                <a href="#metodologia" class="hover:text-yellow-300 transition">Metodologia</a>
+                <a href="#escolas" class="hover:text-yellow-300 transition">Escolas</a>
+               
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="gradient-bg text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Projeto Professor Tutor Anos Finais </h1>
+                <p class="text-xl mb-8">Programa de recomposição de aprendizagens em Língua Portuguesa e Matemática para estudantes do 8º e 9º  anos do Ensino Fundamental.</p>
+                <div class="flex space-x-4">
+                    <a href="#sobre" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-6 rounded-full transition shadow-lg pulse">Saiba Mais</a>
+                    <a href="#contato" class="bg-white hover:bg-gray-100 text-blue-900 font-bold py-3 px-6 rounded-full transition shadow-lg">Contato</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://i.ibb.co/9m53T9V3/LOGO-DE.png" alt="Banner Tutoria 2025" class="max-w-xs md:max-w-md floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Sobre o Programa</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <p class="text-lg mb-6 text-gray-700">O Projeto Tutoria Anos Finais 2025 da Secretaria da Educação do Estado de São Paulo (SEDUC-SP) tem como objetivo principal apoiar a recomposição das aprendizagens dos estudantes do 8º e 9º anos do Ensino Fundamental, com foco nos componentes curriculares de Língua Portuguesa e Matemática.</p>
+                    <p class="text-lg text-gray-700">Em 2025, o projeto será implementado em 500 escolas de 51 Diretorias de Ensino, priorizando escolas com resultados abaixo da média no SARESP.</p>
+                </div>
+                <div class="md:w-1/2 bg-blue-50 rounded-xl p-6 shadow-lg">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-book text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-blue-900">Material Didático</h3>
+                            <p class="text-gray-700">Novo Horizonte para 8º e 9º anos, alinhados ao Currículo Paulista.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-users text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-blue-900">Turmas</h3>
+                            <p class="text-gray-700">Turmas multisseriadas com até 15 estudantes, com aulas presenciais 3 vezes por semana.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-chalkboard-teacher text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-blue-900">Tutores</h3>
+                            <p class="text-gray-700">Dois tutores por escola (Português e Matemática) com formação específica e experiência em alfabetização.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectives Section -->
+    <section id="objetivos" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Objetivos do Projeto</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-bullseye text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3 text-blue-900">Recuperação de Aprendizagens</h3>
+                    <p class="text-gray-700 text-center">Recuperar defasagens em leitura, escrita e operações matemáticas, atendendo estudantes com baixo desempenho identificados pelo SARESP e sondagens internas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-user-graduate text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3 text-blue-900">Preparação para o Ensino Médio</h3>
+                    <p class="text-gray-700 text-center">Consolidar competências e habilidades essenciais para a transição ao Ensino Médio, com foco em interpretação textual e operações matemáticas complexas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-chart-line text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3 text-blue-900">Melhoria de Indicadores</h3>
+                    <p class="text-gray-700 text-center">Elevar os índices educacionais das escolas participantes, reduzindo as desigualdades de aprendizagem e melhorando os resultados nas avaliações externas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="metodologia" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Metodologia e Atuação</h2>
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2">
+                    <div class="bg-blue-50 rounded-xl p-6 mb-6 shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-blue-900 border-b-2 border-blue-200 pb-2">👩‍🏫 Perfil do Professor Tutor</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Formação prioritária em Pedagogia ou Curso Normal Superior</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Experiência em alfabetização e letramento matemático</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Jornada de 16 horas semanais, com dedicação exclusiva ao projeto</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-yellow-50 rounded-xl p-6 shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-blue-900 border-b-2 border-yellow-200 pb-2">📝 Seleção dos Estudantes</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-yellow-600 mt-1 mr-2"></i>
+                                <span>Feita em conjunto pelos professores regentes e tutores</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-yellow-600 mt-1 mr-2"></i>
+                                <span>Baseada no desempenho no SARESP e em provas de sondagem diagnóstica</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-yellow-600 mt-1 mr-2"></i>
+                                <span>Foco em estudantes com maiores dificuldades de aprendizagem</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="bg-green-50 rounded-xl p-6 h-full shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-blue-900 border-b-2 border-green-200 pb-2">📚 Atuação do Tutor</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <div class="flex items-center mb-2">
+                                    <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                        <i class="fas fa-users-cog text-blue-600"></i>
+                                    </div>
+                                    <h4 class="font-bold text-blue-900">Estrutura</h4>
+                                </div>
+                                <p class="text-sm text-gray-700">Cada escola terá dois tutores: um para Língua Portuguesa e outro para Matemática.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <div class="flex items-center mb-2">
+                                    <div class="bg-yellow-100 p-2 rounded-full mr-3">
+                                        <i class="fas fa-calendar-alt text-yellow-600"></i>
+                                    </div>
+                                    <h4 class="font-bold text-blue-900">Frequência</h4>
+                                </div>
+                                <p class="text-sm text-gray-700">Aulas presenciais, 3 vezes por semana, no mesmo turno das aulas regulares.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <div class="flex items-center mb-2">
+                                    <div class="bg-green-100 p-2 rounded-full mr-3">
+                                        <i class="fas fa-book-open text-green-600"></i>
+                                    </div>
+                                    <h4 class="font-bold text-blue-900">Material</h4>
+                                </div>
+                                <p class="text-sm text-gray-700">Uso de material didático impresso fornecido pela SEDUC, dividido em cinco volumes.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <div class="flex items-center mb-2">
+                                    <div class="bg-purple-100 p-2 rounded-full mr-3">
+                                        <i class="fas fa-chalkboard text-purple-600"></i>
+                                    </div>
+                                    <h4 class="font-bold text-blue-900">Metodologia</h4>
+                                </div>
+                                <p class="text-sm text-gray-700">Atividades progressivas que estimulam raciocínio lógico, leitura crítica e resolução de problemas.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <div class="flex items-center mb-2">
+                                    <div class="bg-purple-100 p-2 rounded-full mr-0">
+                                        <i class="fas fa-chalkboard text-pink-600"></i>
+                                    </div>
+                            <h4 class="font-bold text-blue-900">Etapas SED</h4>
+                        </div>
+                        <p class="text-sm text-gray-700">ENTREVISTA/CONTRATAÇÃO</p>
+                        <p class="text-sm text-gray-700">CADASTRO/ENTURMAÇÃO</p>
+                        <p class="text-sm text-gray-700">SONDAGEM/REGISTRO DE ENTRADA</p>
+                        <p class="text-sm text-gray-700">AULAS E TAREFAS</p>
+                        <p class="text-sm text-gray-700">REGISTRO DE PERCURSO</p>
+                        <p class="text-sm text-gray-700">REGISTRO DE SAIDA</p>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schools Section -->
+    <section id="escolas" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Escolas Participantes</h2>
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+                        <i class="fas fa-school text-blue-600 mr-3"></i>
+                        <span>EE ROGERIO LEVORIN PROF</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+                        <i class="fas fa-school text-blue-600 mr-3"></i>
+                        <span>EE PARQUE CENTO E VINTE II</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+                        <i class="fas fa-school text-blue-600 mr-3"></i>
+                        <span>EE JARDIM ALEGRIA II</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+                        <i class="fas fa-school text-blue-600 mr-3"></i>
+                        <span>EE DR MARIO TOLEDO DE MORAES</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+                        <i class="fas fa-school text-blue-600 mr-3"></i>
+                        <span>EE JOSE DE BARROS MARTINS EDITOR</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+                        <i class="fas fa-school text-blue-600 mr-3"></i>
+                        <span>EE KATIA MARIA TARIFA LEME TONELLI PROFA</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+                        <i class="fas fa-school text-blue-600 mr-3"></i>
+                        <span>EE CHACARA CAMPONESA JARDIM VASSOURAS</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+                        <i class="fas fa-school text-blue-600 mr-3"></i>
+                        <span>EE PEDRO LELIS DE SOUZA PREFEITO</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+                        <i class="fas fa-school text-blue-600 mr-3"></i>
+                        <span>EE PIETRO PETRI</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+                        <i class="fas fa-school text-blue-600 mr-3"></i>
+                        <span>EE JOSE PARADA PROFESSOR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Entre em Contato</h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <div class="bg-blue-50 rounded-xl p-6 shadow-lg h-full">
+                        <h3 class="text-xl font-bold mb-4 text-blue-900">Informações da SEDUC-SP</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-blue-900">Endereço</h4>
+                                    <p class="text-gray-700">Av. Prof. Carvalho Pinto, 159, CEP 07700-210 – Centro – Caieiras/SP</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-blue-900">Telefone</h4>
+                                    <p class="text-gray-700">(11) 4442-8600</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-blue-900">E-mail</h4>
+                                    <p class="text-gray-700">em breve</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i class="fas fa-globe text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-blue-900">Site Oficial</h4>
+                                    <p class="text-gray-700">https://sites.google.com/servidor.educacao.sp.gov.br</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 flex items-center">
+                    <img src="https://i.ibb.co/9m53T9V3/LOGO-DE.png" alt="Logo SEDUC" class="h-10 mr-3">
+                    <span class="text-lg font-bold">Projeto Professor Tutor Anos Finais</span>
+                </div>
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-white hover:text-yellow-300 text-xl"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white hover:text-yellow-300 text-xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-yellow-300 text-xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white hover:text-yellow-300 text-xl"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm">© 2025 Secretaria da Educação do Estado de São Paulo</p>
+                    <p class="text-xs mt-1">Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
