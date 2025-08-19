@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutoria 2025 - SEDUC-SP</title>
+    <title>Tutoria 2025 - URE CAIEIRAS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -31,6 +31,21 @@
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 0.5rem;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .school-link {
+            position: relative;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -47,8 +62,8 @@
                 <a href="#metodologia" class="hover:text-yellow-300 transition">Metodologia</a>
                 <a href="#escolas" class="hover:text-yellow-300 transition">Escolas</a>
                 <a href="https://sedsee.blob.core.windows.net/ficha/Anexo/legislacao25062024151806resol%2046%202024.pdf?Time=14%3A46">Resolução</a>
-                    </div>           
-            </nav>
+                    </div>
+                       </nav>
             <button class="md:hidden text-2xl" id="menuBtn">☰</button>
         </div>
         <!-- Mobile menu -->
@@ -59,15 +74,15 @@
                 <a href="#metodologia" class="hover:text-yellow-300 transition">Metodologia</a>
                 <a href="#escolas" class="hover:text-yellow-300 transition">Escolas</a>
             <a href="https://sedsee.blob.core.windows.net/ficha/Anexo/legislacao25062024151806resol%2046%202024.pdf?Time=14%3A46">Resolução</a>
-                    </div>  
-        </div>
+                    </div>
+          </div>
     </header>
 
     <!-- Hero Banner -->
     <section class="gradient-bg text-white py-16 md:py-24">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Projeto Professor Tutor Anos Finais </h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Projeto Professor Tutor Anos Finais - URE CAIEIRAS </h1>
                 <p class="text-xl mb-8">Programa de recomposição de aprendizagens em Língua Portuguesa e Matemática para estudantes do 8º e 9º  anos do Ensino Fundamental.</p>
                 <div class="flex space-x-4">
                     <a href="#sobre" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-6 rounded-full transition shadow-lg pulse">Saiba Mais</a>
@@ -139,7 +154,7 @@
                         <i class="fas fa-user-graduate text-blue-600 text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-center mb-3 text-blue-900">Preparação para o Ensino Médio</h3>
-                    <p class="text-gray-700 text-center">Consolidar competências e habilidades essenciais para a transição ao Ensino Médio, com foco em interpretação textual e operações matemáticas complexas.</p>
+                    <p class="text-gray-700 text-center">Consolidar competências e habilidades essenciais para a transição ao Ensino Médio, com foco em interpretação textual e operações matemáticas complexes.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
                     <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -193,7 +208,7 @@
                         </ul>
                     </div>
                 </div>
-                
+                                
                 <div class="lg:w-1/2">
                     <div class="bg-green-50 rounded-xl p-6 h-full shadow-lg">
                         <h3 class="text-xl font-bold mb-4 text-blue-900 border-b-2 border-green-200 pb-2">📚 Atuação do Tutor</h3>
@@ -204,8 +219,7 @@
                                         <i class="fas fa-users-cog text-blue-600"></i>
                                     </div>
                                     <h4 class="font-bold text-blue-900">Estrutura</h4>
-                                
-                                 </div>
+                                                                  </div>
                                 <p class="text-sm text-gray-700">Cada escola terá dois tutores: um para Língua Portuguesa e outro para Matemática.</p>
                             </div>
                             <div class="bg-white p-4 rounded-lg shadow">
@@ -259,49 +273,249 @@
     <!-- Schools Section -->
     <section id="escolas" class="py-16 bg-blue-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Escolas Participantes</h2>
+            <h2 class="text-3xl font-bold text-center mb-8 text-blue-900">Escolas Participantes</h2>
+            
+            <!-- Announcements Section -->
+            <div class="bg-yellow-50 rounded-xl shadow-lg p-6 mb-8">
+                <div class="flex items-center">
+                    <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-calendar-alt text-yellow-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Avisos Importantes</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-start">
+                                <i class="fas fa-bell text-yellow-500 mt-1 mr-2"></i>
+                                <p class="text-gray-700">Período de inscrição para tutores: 15/01/2025 a 30/01/2025</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-bell text-yellow-500 mt-1 mr-2"></i>
+                                <p class="text-gray-700">Capacitação inicial: 10/02/2025 a 14/02/2025</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-bell text-yellow-500 mt-1 mr-2"></i>
+                                <p class="text-gray-700">Início das atividades: 17/02/2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="bg-white rounded-xl shadow-lg p-6">
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <a href="https://www.escolas.sp.gov.br/EE-ROGERIO-LEVORIN-PROF" class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow">
-                        <i class="fas fa-school text-blue-600 mr-3"></i>
-                        <span>EE ROGERIO LEVORIN PROF</span>
-                    </a>
-                    <a href="https://www.escolas.sp.gov.br/EE-PARQUE-CENTO-E-VINTE-II" class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow">
-                        <i class="fas fa-school text-blue-600 mr-3"></i>
-                        <span>EE PARQUE CENTO E VINTE II</span>
-                    </a>
-                    <a href="https://www.escolas.sp.gov.br/EE-JARDIM-ALEGRIA-II" class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow">
-                        <i class="fas fa-school text-blue-600 mr-3"></i>
-                        <span>EE JARDIM ALEGRIA II</span>
-                    </a>
-                    <a href="https://www.escolas.sp.gov.br/EE-DR-MARIO-TOLEDO-DE-MORAES" class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow">
-                        <i class="fas fa-school text-blue-600 mr-3"></i>
-                        <span>EE DR MARIO TOLEDO DE MORAES</span>
-                    </a>
-                    <a href="https://www.escolas.sp.gov.br/EE-JOSE-DE-BARROS-MARTINS-EDITOR" class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow">
-                        <i class="fas fa-school text-blue-600 mr-3"></i>
-                        <span>EE JOSE DE BARROS MARTINS EDITOR</span>
-                    </a>
-                    <a href="https://www.escolas.sp.gov.br/EE-KATIA-MARIA-TARIFA-LEME-TONELLI-PROFA" class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow">
-                        <i class="fas fa-school text-blue-600 mr-3"></i>
-                        <span>EE KATIA MARIA TARIFA LEME TONELLI PROFA</span>
-                    </a>
-                    <a href="https://www.escolas.sp.gov.br/EE-CHACARA-CAMPONESA-JARDIM-VASSOURAS" class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow">
-                        <i class="fas fa-school text-blue-600 mr-3"></i>
-                        <span>EE CHACARA CAMPONESA JARDIM VASSOURAS</span>
-                    </a>
-                    <a href="https://www.escolas.sp.gov.br/EE-PEDRO-LELIS-DE-SOUZA-PREFEITO" class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow">
-                        <i class="fas fa-school text-blue-600 mr-3"></i>
-                        <span>EE PEDRO LELIS DE SOUZA PREFEITO</span>
-                    </a>
-                    <a href="https://www.escolas.sp.gov.br/EE-PIETRO-PETRI" class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow">
-                        <i class="fas fa-school text-blue-600 mr-3"></i>
-                        <span>EE PIETRO PETRI</span>
-                    </a>
-                    <a href="https://www.escolas.sp.gov.br/EE-JOSE-PARADA-PROFESSOR" class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow">
-                        <i class="fas fa-school text-blue-600 mr-3"></i>
-                        <span>EE JOSE PARADA PROFESSOR</span>
-                    </a>
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE ROGERIO LEVORIN PROF</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE PARQUE CENTO E VINTE II</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE JARDIM ALEGRIA II</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE DR MARIO TOLEDO DE MORAES</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE JOSE DE BARROS MARTINS EDITOR</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE KATIA MARIA TARIFA LEME TONELLI PROFA</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE CHACARA CAMPONESA JARDIM VASSOURAS</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE PEDRO LELIS DE SOUZA PREFEITO</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE PIETRO PETRI</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE JOSE PARADA PROFESSOR</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE AFONSO MORENO</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE APARECIDO ROBERTO TONELLOTTI PROFESSOR</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE JARDIM DAS ROSAS</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE JARDIM SILVIA II</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE JOCIMARA VIEIRA DA SILVA PROFA</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE LUIZ ALEXANDRE DOS SANTOS VEREADOR</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
+                    <div class="school-link relative">
+                        <div class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg flex items-center transition shadow cursor-pointer">
+                            <i class="fas fa-school text-blue-600 mr-3"></i>
+                            <span>EE ZILTON BICUDO PROF</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="https://example.com/grade-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Português</a>
+                            <a href="https://example.com/grade-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Grade Matemática</a>
+                            <a href="https://example.com/acompanhamento-portugues" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Português</a>
+                            <a href="https://example.com/acompanhamento-matematica" class="block px-4 py-2 hover:bg-blue-100 text-gray-700">Acompanhamento Matemática</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -355,7 +569,7 @@
                         </div>
                     </div>
                 </div>
-              
+                          
             </div>
         </div>
     </section>
@@ -383,31 +597,60 @@
         // Mobile menu toggle
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
-        
+                
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-        
+                
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+                                
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+                                
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
+                                            
                     // Close mobile menu if open
                     if (!mobileMenu.classList.contains('hidden')) {
                         mobileMenu.classList.add('hidden');
                     }
                 }
             });
+        });
+
+        // School dropdown functionality
+        document.querySelectorAll('.school-link').forEach(school => {
+            const link = school.querySelector('div');
+            const dropdown = school.querySelector('.dropdown-content');
+            
+            link.addEventListener('click', (e) => {
+                // Close all other dropdowns
+                document.querySelectorAll('.dropdown-content').forEach(d => {
+                    if (d !== dropdown) d.style.display = 'none';
+                });
+                
+                // Toggle current dropdown
+                if (dropdown.style.display === 'block') {
+                    dropdown.style.display = 'none';
+                } else {
+                    dropdown.style.display = 'block';
+                }
+            });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.school-link')) {
+                document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            }
         });
     </script>
 </body>
